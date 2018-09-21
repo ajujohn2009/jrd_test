@@ -8,14 +8,7 @@ class Bootstrap {
 	public function __construct () {
 		//Router
 		error_reporting(E_ALL);
-		$GLOBALS['config'] = array(
-			'mysql' => array(
-				'username' => 'aju',
-				'password' => 'ajujohn',
-				'database' => 'jrd_test',
-				'host' => 'localhost'
-			)
-		);
+		
 		$parts = explode('?', rtrim($_SERVER['REQUEST_URI'], '?'));
 		$tokens = explode('/', rtrim($parts[0], '/'));
 		if(!isset($tokens[1])) { //If no extra url

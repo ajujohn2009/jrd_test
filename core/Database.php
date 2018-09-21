@@ -1,6 +1,6 @@
 <?php
 
-require_once 'src/config/Config.php';
+require_once 'config/Config.php';
 
 class Database {
 	private $username = null, $password = null, $dsn = null;

@@ -22,10 +22,10 @@ SET time_zone = "+00:00";
 -- Database: `jrd_test`
 --
 USE `mysql`;
-DROP DATABASE IF EXISTS `rajeeb`;
-CREATE DATABASE `rajeeb`;
+DROP DATABASE IF EXISTS `jrd_test`;
+CREATE DATABASE `jrd_test`;
 
-USE `rajeeb`;
+USE `jrd_test`;
 -- --------------------------------------------------------
 
 --
