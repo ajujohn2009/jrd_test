@@ -1,0 +1,47 @@
+.date-range input {
+	width:100px;
+	display: inline-block;
+
+}
+.date-range input:first-child {
+	margin-right:10px;
+}
+input {
+	background-color: rgba(255, 255, 255, 0.2)!important;
+}
+.searchFilter {
+	width: 150px;
+}
+.new-form .row, .edit-form .row{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.edit-form .control-label:after {
+  content:" *";
+  color:red;
+}
+.btn-container {
+	text-align: right;
+	margin: 10px;
+}
+.type-hint {
+	font-style: italic;
+	visibility: hidden;
+}
+.modal-header {
+	background-color : rgba(224, 224, 224, 0.3);
+}
+table#studentTbl thead tr th {
+	text-align:center!important;
+	background-color: #009688;
+	color:white;
+}
+table#studentTbl .th_dt_added {
+	width: 210px!important;
+}
+table#studentTbl .th_dt_updated {
+	width: 150px!important;
+}
+table#studentTbl .th_year_joined {
+	width: 50px!important;
+}

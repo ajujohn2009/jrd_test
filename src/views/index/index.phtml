@@ -1,0 +1,42 @@
+    <hr/>
+	<h4>Students List</h4>
+    <hr/>
+    <div class="btn-container">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addNewModal">Add New Student</button>
+        <button id="deleteRecord" class="btn btn-danger" disabled="true" >Delete Selected</button>
+        <button type="button" class="btn btn-default" disabled="true" id="editBtn" >Edit Selected</button>
+    </div>
+    <?php 
+            $this->renderPartial('src/views/index/_jrd-datatable.phtml',
+                array(
+                    'mainClass'=>'new-form',
+                    'btnTitle'=> 'Add',
+                    'modalTitle' => 'Add new Student'
+                )); 
+    ?>
+    
+    <div class="modal fade" id="addNewModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <?php 
+                $this->renderPartial('src/views/index/_jrd-modal.phtml',
+                    array(
+                        'mainClass'=>'new-form',
+                        'btnTitle'=> 'Add',
+                        'modalTitle' => 'Add new Student',
+                        'saveBtnClass' => 'addFormBtn'
+                    )); 
+            ?>
+    </div>
+    <div class="modal fade" id="editDataModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <?php 
+                $this->renderPartial('src/views/index/_jrd-modal.phtml', 
+                    array(
+                        'mainClass'=>'edit-form',
+                        'btnTitle'=> 'Update',
+                        'modalTitle' => 'Edit Student Details',
+                        'saveBtnClass' => 'editFormBtn'
+                    )); 
+            ?>
+    </div>
+    <script>
+        var pageLimit = <?= Config::$pageSize; ?>;
+    </script>
